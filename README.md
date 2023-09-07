@@ -1,6 +1,6 @@
 # [Marcos Dev](https://mrsilva.dev/)
 
-🌟 Welcome to my personal website and developer portfolio! 🚀 Explore my journey through the world of coding, development projects, and a glimpse into my life. Let's connect and code together! 💻🌐
+🌟 Welcome to my personal website and developer portfolio! 🚀 Explore my journey through the world of coding, development projects, and a glimpse into my life. 💻🌐
 
 ## Getting Started
 
