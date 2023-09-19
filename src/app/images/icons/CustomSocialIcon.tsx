@@ -5,7 +5,7 @@ interface CustomSocialIconProps {
   ariaLabel: string;
 }
 
-export function CustomSocialIcon({ url, ariaLabel }: CustomSocialIconProps) {
+function CustomSocialIcon({ url, ariaLabel }: CustomSocialIconProps) {
   return (
     <SocialIcon
       url={url}
@@ -15,3 +15,5 @@ export function CustomSocialIcon({ url, ariaLabel }: CustomSocialIconProps) {
     />
   );
 }
+
+export default CustomSocialIcon;
