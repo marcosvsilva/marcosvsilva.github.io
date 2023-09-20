@@ -1,6 +1,6 @@
 'use client';
 
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import React, { useEffect, useRef } from 'react';
 
 import Avatar from './Avatar';
@@ -11,8 +11,7 @@ import DesktopNavigation from './navigation/DesktopNavigation';
 import MobileNavigation from './navigation/MobileNavigation';
 
 function Header() {
-  // const router = useRouter();
-  const isHomePage = true;
+  const isHomePage = usePathname() == '/';
 
   const headerRef = useRef<HTMLDivElement>(null);
   const avatarRef = useRef<HTMLDivElement>(null);
