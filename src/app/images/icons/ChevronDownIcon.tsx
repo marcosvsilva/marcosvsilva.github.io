@@ -5,7 +5,13 @@ function ChevronDownIcon({ ...props }) {
       aria-hidden="true"
       {...props}
     >
-      {/* SVG path content */}
+      <path
+        d="M1.75 1.75 4 4.25l2.25-2.5"
+        fill="none"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
