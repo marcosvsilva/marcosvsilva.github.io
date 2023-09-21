@@ -11,11 +11,13 @@ function Footer() {
           <Container.Inner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                {/* 
                 <NavLink link="/about">About</NavLink>
-                {/* <NavItem link="/articles">Articles</NavItem>
+                <NavItem link="/articles">Articles</NavItem>
                 <NavItem link="/projects">Projects</NavItem>
                 <NavItem link="/speaking">Speaking</NavItem>
-                <NavItem link="/uses">Uses</NavItem> */}
+                <NavItem link="/uses">Uses</NavItem>
+                */}
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">&copy; {currentYear} Marcos Silva. All rights reserved.</p>
             </div>
