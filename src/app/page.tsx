@@ -1,6 +1,7 @@
 import Container from './components/Container';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Resume from './components/Resume';
 import CustomSocialIcon from './images/icons/CustomSocialIcon';
 
 export default function Home() {
@@ -52,9 +53,12 @@ export default function Home() {
               </div>
             </div>
           </Container>
+
           <Container className="mt-24 md:mt-28">
             <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-              <div className="space-y-10 lg:pl-16 xl:pl-24"></div>
+              <div className="space-y-10 lg:pl-16 xl:pl-24">
+                <Resume />
+              </div>
             </div>
           </Container>
         </main>
