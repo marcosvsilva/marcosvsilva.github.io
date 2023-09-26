@@ -13,6 +13,7 @@ type AvatarProps = {
 function Avatar({ large = false, className, style, ...props }: AvatarProps) {
   return (
     <Link
+      style={style}
       href="/"
       aria-label="Home"
       className={clsx(className, 'pointer-events-auto')}
@@ -22,7 +23,6 @@ function Avatar({ large = false, className, style, ...props }: AvatarProps) {
         src={avatarImage}
         alt="Marcos Silva"
         sizes={large ? ('4rem' as string) : ('2.25rem' as string)}
-        style={style}
         className={clsx('rounded-full bg-zinc-100 object-cover dark:bg-zinc-800', large ? 'h-16 w-16' : 'h-9 w-9')}
         priority
       />
