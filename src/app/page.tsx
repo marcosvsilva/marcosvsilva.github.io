@@ -21,7 +21,7 @@ export default function Home() {
                 Software engineer and Machine Learning engineer.
               </h1>
               <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                I&rsquo;m Marcos, a software designer and entrepreneur based in Dublin City (Ireland). I&rsquo;m a software engineer, and I have a
+                I&rsquo;m Marcos, a software engineer and and AI expert based in Dublin City (Ireland). I&rsquo;m a software engineer, and I have a
                 master&rsquo;s degree incomputer science in the Artificial intelligence line, where we develop technologies that empower regular people.
               </p>
 
@@ -53,7 +53,11 @@ export default function Home() {
               </div>
             </div>
           </Container>
-
+          <Container className="mt-24 md:mt-28">
+            <div className="sm:align-center sm:flex sm:flex-col">
+              <div className="relative mt-6 flex self-center rounded-lg bg-gray-100 p-0.5 sm:mt-8"></div>
+            </div>
+          </Container>
           <Container className="mt-24 md:mt-28">
             <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
               <div className="space-y-10 lg:pl-16 xl:pl-24">
