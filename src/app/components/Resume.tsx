@@ -2,7 +2,13 @@ import React, { ReactNode } from 'react';
 
 import ArrowDownIcon from '../images/icons/ArrowDownIcon';
 import BriefcaseIcon from '../images/icons/BriefcaseIcon';
-import Airbnb from '../images/logos/Airbnb';
+import CEIA from '../images/logKos/CEIA';
+import Aliare from '../images/logos/Aliare';
+import Ceia from '../images/logos/Ceia';
+import Jave from '../images/logos/Jave';
+import Siacon from '../images/logos/Siacon';
+import Softworks from '../images/logos/Softworks';
+import Ufg from '../images/logos/Ufg';
 import Button from './Button';
 
 interface ResumeRole {
@@ -16,32 +22,46 @@ interface ResumeRole {
 function Resume() {
   const resume: ResumeRole[] = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: () => <Airbnb />,
-      start: '2019',
+      company: 'Softworks.com',
+      title: 'Software Engineer & Data Scientist',
+      logo: () => <Softworks />,
+      start: '2023',
       end: 'Present',
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: () => <Airbnb />,
-      start: '2014',
+      company: '(CExIA) & Deep Learning Brasil ',
+      title: 'Software Engineer & ML Engineer',
+      logo: () => <Ceia />,
+      start: '2020',
+      end: '2023',
+    },
+    {
+      company: 'UFG - Brazil',
+      title: 'Research & Development Scientist',
+      logo: () => <Ufg />,
+      start: '2019',
+      end: '2021',
+    },
+    {
+      company: 'Aliare',
+      title: 'Software Engineer',
+      logo: () => <Aliare />,
+      start: '2017',
       end: '2019',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: () => <Airbnb />,
-      start: '2011',
-      end: '2014',
+      company: 'Siacon',
+      title: 'Software Engineer',
+      logo: () => <Siacon />,
+      start: '2017',
+      end: '2017',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: () => <Airbnb />,
-      start: '2008',
-      end: '2011',
+      company: 'Jave Informática',
+      title: 'Software Engineer',
+      logo: () => <Jave />,
+      start: '2013',
+      end: '2016',
     },
   ];
 
