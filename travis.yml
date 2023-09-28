@@ -1,0 +1,19 @@
+language:
+  node_js
+node_js:
+  - 16.20
+cache:
+  npm
+
+install:
+  - npm ci
+
+script:
+  - npm build
+
+deploy:
+  provider: pages
+  skipt-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: main
