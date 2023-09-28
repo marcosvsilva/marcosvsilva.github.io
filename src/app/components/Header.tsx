@@ -29,7 +29,9 @@ function Header() {
       document.documentElement.style.removeProperty(property);
     }
 
-    function clamp(value: number, min: number, max: number): number {
+    function clamp(value: number, a: number, b: number): number {
+      const min = Math.min(a, b);
+      const max = Math.max(a, b);
       return Math.min(Math.max(value, min), max);
     }
 
@@ -37,7 +39,6 @@ function Header() {
       const { top, height } = headerRef.current?.getBoundingClientRect() ?? { top: 0, height: 0 };
       const scrollY = clamp(window.scrollY, 0, document.body.scrollHeight - window.innerHeight);
 
-      setProperty('--header-position', 'static');
       if (isInitial.current) {
         setProperty('--header-position', 'sticky');
       }
@@ -122,6 +123,35 @@ function Header() {
           } as React.CSSProperties
         }
       >
+        <div
+          ref={headerRef}
+          className="top-0 z-10 h-16 pt-6"
+          style={{ position: 'var(--header-position)' as string } as React.CSSProperties}
+        >
+          <Container
+            className="top-[var(--header-top,theme(spacing.6))] w-full"
+            style={{ position: 'var(--header-inner-position)' as string } as React.CSSProperties}
+          >
+            <div className="relative flex gap-4">
+              <div className="flex flex-1">
+                {!isHomePage && (
+                  <AvatarContainer>
+                    <Avatar />
+                  </AvatarContainer>
+                )}
+              </div>
+              <div className="flex flex-1 justify-end md:justify-center">
+                <MobileNavigation className="pointer-events-auto md:hidden" />
+                <DesktopNavigation className="pointer-events-auto hidden md:block" />
+              </div>
+              <div className="flex justify-end md:flex-1">
+                <div className="pointer-events-auto">
+                  <ModeToggle />
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
         {isHomePage && (
           <>
             <div
@@ -156,35 +186,6 @@ function Header() {
             </Container>
           </>
         )}
-        <div
-          ref={headerRef}
-          className="top-0 z-10 h-16 pt-6"
-          style={{ position: 'var(--header-position)' as string } as React.CSSProperties}
-        >
-          <Container
-            className="top-[var(--header-top,theme(spacing.6))] w-full"
-            style={{ position: 'var(--header-position)' as string } as React.CSSProperties}
-          >
-            <div className="relative flex gap-4">
-              <div className="flex flex-1">
-                {!isHomePage && (
-                  <AvatarContainer>
-                    <Avatar />
-                  </AvatarContainer>
-                )}
-              </div>
-              <div className="flex flex-1 justify-end md:justify-center">
-                <MobileNavigation className="pointer-events-auto md:hidden" />
-                <DesktopNavigation className="pointer-events-auto hidden md:block" />
-              </div>
-              <div className="flex justify-end md:flex-1">
-                <div className="pointer-events-auto">
-                  <ModeToggle />
-                </div>
-              </div>
-            </div>
-          </Container>
-        </div>
       </header>
       {isHomePage && <div style={{ height: 'var(--content-offset)' as string } as React.CSSProperties} />}
     </>

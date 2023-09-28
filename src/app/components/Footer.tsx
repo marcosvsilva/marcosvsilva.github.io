@@ -1,5 +1,5 @@
 import Container from './Container';
-import NavLink from './navigation/NavItem';
+// import NavLink from './navigation/NavItem';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
