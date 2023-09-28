@@ -22,21 +22,21 @@ function Resume() {
   const resume: ResumeRole[] = [
     {
       company: 'Softworks.com',
-      title: 'Software Engineer & Data Scientist',
+      title: 'SDE & Data Scientist',
       logo: () => <Softworks />,
       start: '2023',
       end: 'Present',
     },
     {
-      company: '(CExIA) & Deep Learning Brasil ',
-      title: 'Software Engineer & ML Engineer',
+      company: 'CEIA - Center of Excellence in AI',
+      title: 'SDE & ML Engineer',
       logo: () => <Ceia />,
       start: '2020',
       end: '2023',
     },
     {
-      company: 'UFG - Brazil',
-      title: 'Research & Development Scientist',
+      company: 'Federal University of Goiás',
+      title: 'Researcher',
       logo: () => <Ufg />,
       start: '2019',
       end: '2021',
