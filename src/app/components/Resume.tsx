@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react';
 
 import ArrowDownIcon from '../images/icons/ArrowDownIcon';
 import BriefcaseIcon from '../images/icons/BriefcaseIcon';
-import CEIA from '../images/logKos/CEIA';
 import Aliare from '../images/logos/Aliare';
 import Ceia from '../images/logos/Ceia';
 import Jave from '../images/logos/Jave';
@@ -97,7 +96,8 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href=""
+        href="/files/resume.pdf"
+        download="MRSilvaResume.pdf"
         variant="secondary"
         className="group mt-6 w-full"
       >

@@ -12,11 +12,12 @@ interface ButtonProps {
   variant?: 'primary' | 'secondary';
   className?: string;
   href?: string;
+  download?: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }
 
-function Button({ variant = 'primary', className, href, ...props }: ButtonProps) {
+function Button({ variant = 'primary', className, href, download, ...props }: ButtonProps) {
   className = clsx(
     'inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none',
     variantStyles[variant],
@@ -26,13 +27,11 @@ function Button({ variant = 'primary', className, href, ...props }: ButtonProps)
   return href ? (
     <Link
       href={href}
-      passHref
-    >
-      <a
-        className={className}
-        {...props}
-      />
-    </Link>
+      download={download}
+      className={className}
+      target="_blank"
+      {...props}
+    />
   ) : (
     <button
       className={className}
