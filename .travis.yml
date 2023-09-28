@@ -16,4 +16,7 @@ deploy:
   skipt-cleanup: true
   github-token: $GITHUB_TOKEN
   on:
-    branch: main
+    repo: marcosvsilva/marcosvsilva.github.io
+    branches:
+      only:
+        - master
