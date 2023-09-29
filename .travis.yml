@@ -7,7 +7,6 @@ cache:
   - node_modules
 script:
   - npm run build
-  - npm run export
 deploy:
   provider: pages
   skipt-cleanup: true
