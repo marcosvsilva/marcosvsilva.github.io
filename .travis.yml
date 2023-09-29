@@ -3,14 +3,12 @@ language:
 node_js:
   - 16.20
 cache:
-  npm
-
-install:
-  - npm ci
-
+  directories:
+  - node_modules
 script:
   - npm run build
-
+  - npm run export
+  - touch out/.nojekyll 
 deploy:
   provider: pages
   skipt-cleanup: true
@@ -20,3 +18,5 @@ deploy:
     branches:
       only:
         - master
+after_deploy:
+  - echo "Application Deployed! 🚀"
