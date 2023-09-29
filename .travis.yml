@@ -8,7 +8,6 @@ cache:
 script:
   - npm run build
   - npm run export
-  - touch out/.nojekyll 
 deploy:
   provider: pages
   skipt-cleanup: true
