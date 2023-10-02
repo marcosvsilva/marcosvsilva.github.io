@@ -1,21 +1,11 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
-  pageExtensions: ['ts', 'tsx', 'mdx'],
-  reactStrictMode: true,
-  experimental: {
-    scrollRestoration: true,
-  },
-};
-
-nextConfig.exports = {
-  exportPathMap: function () {
+module.exports = {
+  exportPathMap: async function () {
     return {
       '/': { page: '/' },
       '/about': { page: '/about' },
     };
   },
-  experimental: {
-    output: 'export',
-  },
+  output: 'export', // This line enables static HTML export
 };
