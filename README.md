@@ -1,5 +1,7 @@
 # [Marcos Dev](https://mrsilva.dev/)
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmarcosvsilva%2Fmarcosvsilva.github.io)
+
 🌟 Welcome to my personal website and developer portfolio! 🚀 Explore my journey through the world of coding, development projects, and a glimpse into my life. 💻🌐
 
 ## Getting Started
