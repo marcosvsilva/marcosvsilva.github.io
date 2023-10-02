@@ -1,11 +1,4 @@
 /** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-module.exports = {
-  exportPathMap: async function () {
-    return {
-      '/': { page: '/' },
-      '/about': { page: '/about' },
-    };
-  },
-  output: 'export', // This line enables static HTML export
-};
+module.exports = nextConfig;
