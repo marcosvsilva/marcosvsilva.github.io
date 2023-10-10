@@ -32,6 +32,10 @@ export default function Home() {
                   ariaLabel="Send a message"
                 />
                 <CustomSocialIcon
+                  url="https://twitter.com/MarcosVVSilva"
+                  ariaLabel="Follow on X"
+                />
+                <CustomSocialIcon
                   url="https://www.instagram.com/marcosvvsilva/"
                   ariaLabel="Follow on Instagram"
                 />
