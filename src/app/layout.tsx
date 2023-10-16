@@ -25,9 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <Header />
-          <div className="relative">
-            <div className="mt-16 sm:mt-20">{children}</div>
-          </div>
+          <div className="relative">{children}</div>
           <Footer />
         </body>
       </>
