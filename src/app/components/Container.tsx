@@ -34,9 +34,12 @@ const InnerContainer = forwardRef<HTMLDivElement, ContainerProps>(function Inner
   );
 });
 
-const Container = forwardRef<HTMLDivElement, ContainerProps>(function Container({ children }, ref) {
+const Container = forwardRef<HTMLDivElement, ContainerProps>(function Container({ children, className }, ref) {
   return (
-    <OuterContainer ref={ref}>
+    <OuterContainer
+      ref={ref}
+      className={className}
+    >
       <InnerContainer>{children}</InnerContainer>
     </OuterContainer>
   );
