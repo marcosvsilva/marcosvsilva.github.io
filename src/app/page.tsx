@@ -46,12 +46,7 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      <Container className="mt-24 md:mt-28">
-        <div className="sm:align-center sm:flex sm:flex-col">
-          <div className="relative mt-6 flex self-center rounded-lg bg-gray-100 p-0.5 sm:mt-8"></div>
-        </div>
-      </Container>
-      <Container className="mt-24 md:mt-28">
+      <Container className="mt-24 md:mt-9">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             <Article />
