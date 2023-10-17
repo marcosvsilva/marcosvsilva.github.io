@@ -18,7 +18,8 @@ function Header() {
   const isInitial = useRef<boolean>(true);
 
   useEffect(() => {
-    const downDelay = avatarRef.current?.offsetTop ?? 0;
+    // const downDelay = avatarRef.current?.offsetTop ?? 0;
+    const downDelay = 116;
     const upDelay = 64;
 
     function setProperty(property: string, value: string) {
