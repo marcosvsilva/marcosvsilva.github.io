@@ -25,7 +25,7 @@ export default function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
               I’m Marcos Silva, a software engineer. I graduated from the Federal University of Goiás in 2017 and earned a master’s degree in Computer Science,
-              defending my thesis in 2023.
+              defending my thesis in 2022.
             </p>
             <p>
               I began my career in 2011 in technical support and ventured into software development in 2013. Since then, I’ve gained experience in both software
